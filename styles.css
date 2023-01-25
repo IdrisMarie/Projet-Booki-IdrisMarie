@@ -245,18 +245,22 @@ top: 0%;
 bottom: 37.69%;
 border: 5px solid #FFFFFF;
 border-radius: 20px 20px 0px 0px;
+object-fit: cover;
 
 }
 
 
 .imghebpopulaires{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 width: 137px;
-height: 139px;
-left: 0px;
-top: 0%;
-bottom: 0%;
-border: 5px solid #FFFFFF;
+height: 135px;
+border-left: 5px solid #FFFFFF;
+border-top-width: 2px;
+border-bottom-width: 2px;
 border-radius: 20px 0px 0px 20px;
+object-fit: cover;
 
 }
 
@@ -319,13 +323,21 @@ gap: 18px;
  }
 
  .nom-hotel{
-  text-decoration: none !important;
+ 
 margin-top: 3px;
 width: 90%;
 font-size: 16px;
 color: black;  
 line-height: 18px;
   
+ }
+ .liens-hotels{
+  text-decoration: none;
+  color: black;
+ }
+ .liens-hotels2{
+  text-decoration: none;
+  color: black;
  }
 
  .p-hebergement{
@@ -365,14 +377,18 @@ width: 90%;
  .align-stars2{
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 0;
-    
-    width: 90%;
+    margin-top : 25px
+
      }
+     .align-stars3{
+      display: flex;
+      flex-direction: row;
+      margin-top : 40px
+  
+       }
  .title-populaires{
-    margin-top: 0;
-    padding-top: 15px;
+    
+    padding-top: 10px;
     padding-left: 40px;
     color: black;
     font-size: 22px;
@@ -382,7 +398,7 @@ width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width  : 255px;
+    width  : 256px;
     height : 220px;
     background : white;
     border-radius: 20px;
@@ -416,11 +432,13 @@ width: 90%;
   .alignement-content-aside {
     display: flex;
     flex-direction: column;
+    padding-left: 15px;
+    padding-top: 0px;
 
   }
 
   .nom-hotel-populaires{
-    margin-top: 5px;
+    margin-top: 2px;
     font-size: 16px;
   }
  
