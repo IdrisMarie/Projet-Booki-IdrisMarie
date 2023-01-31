@@ -41,6 +41,7 @@ font-family: 'Raleway', sans-serif;
 body {
   height: auto;
     max-width: 1400px;
+    min-width: 992px;
     background-color: white;
     margin-left: 2em;
     margin-right: 2em;
@@ -235,6 +236,8 @@ font-family: 'Raleway', sans-serif;
   color: black;
 }
 /** hébergements marseille **/
+
+
   
 .imghebergement{
 width: 246px;
@@ -304,8 +307,8 @@ gap: 18px;
  .background-hebergement2 {
     margin: 0;
     background-color: #F2F2F2;
-    width: 420px;
-    height: 625px;
+    width: 415px;
+    height: 620px;
     border-radius:20px;
  }
 
@@ -314,6 +317,13 @@ gap: 18px;
     flex-direction: row;
     gap: 25px;
  }
+
+ .aside-flex {
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ 
 
  #title-hebergement{
     padding-left: 35px;
@@ -325,6 +335,7 @@ gap: 18px;
  .nom-hotel{
  
 margin-top: 3px;
+margin-bottom: 10px;
 width: 90%;
 font-size: 16px;
 color: black;  
@@ -344,6 +355,7 @@ line-height: 18px;
     margin-top: 0px;
     width: 90%;
     font-size: 14px;
+    margin-bottom: 10px;
     
  }
  
@@ -372,6 +384,7 @@ line-height: 18px;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
+
 width: 90%;
  }
  .align-stars2{
@@ -584,3 +597,133 @@ font-weight: 700;
   padding-left: 5em;
       
   } 
+
+  /** MEDIA QUERIES TAB **/
+
+  @media screen and (max-width: 992px) {
+    .logo {width: 50px;
+      height: 14px; 
+    }
+    
+    .conteneur-nav{
+      display:flex;
+      flex-direction: row;
+      
+    }
+    .titre-1{
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .p-zones{
+      font-size: 15px;
+    }
+    
+    .bouton-rechercher{
+      width: 315px;
+      height: 36px;
+      border-radius: 20px;
+    }
+    .fa-location-dot{
+      width: 43px;
+      height: 38px;
+      line-height: 40px;
+      font-size: 12px;
+    }
+    
+    .placeholder-rechercher input::placeholder{
+      font-size: 14px;
+      padding-left: 5px;
+      
+    }
+    
+    
+    .buttn-search {
+     border-radius:  0 14px 14px 0;
+      line-height: 37px;
+      font-size: 13px;
+      font-weight: 600;
+     width: 132px;
+     height: 38px; 
+    
+    }
+    .flex-filtres{
+      gap: 25px;
+    }
+    
+    
+    .background-hebergement2 {
+      width: 880px;
+      height: 260px;
+      
+   }
+  
+   .main-aside-flex{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+  
+   .aside-flex {
+    display: flex;
+    flex-direction: row;
+    
+   }
+
+   .icon-grow {
+    gap: 580px;
+   }
+ 
+   .imghebpopulaires{
+    width: 106px;
+    height: 144px;
+    border: 5px solid #FFFFFF;
+   
+
+   
+   }
+ .content-box-2 {
+  width: 268px;
+  height: 159px;
+  margin-left: 20px;
+  
+ }
+
+ .nom-hotel-populaires {
+  font-size: 15px;
+ }
+
+ .card { 
+  width: 190px;
+  height: 320px;
+ }
+
+ .contain-img {
+  width: 150px;
+  height: 267px;
+  
+ }
+
+ .contain-img2 {
+  width: 150px;
+  height: 267px;
+  
+ }
+
+ .title-activite {
+  font-size: 12px;
+ }
+
+ .flex-footer{
+  width: 880px;
+  gap: 20px;
+ }
+
+     }
+
+  
+     
+      
+    
+      
+         
+      
