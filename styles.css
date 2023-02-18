@@ -1,54 +1,61 @@
-.logo{                     /** HEADER **/
-    width: 61.09px;
-    height: 19px;
-    margin-left: 0px;
-    margin-top: 2em;
-}
-p, h1, h2, h3, h4{
-    font-family: 'Open Sans', sans-serif;
-font-family: 'Raleway', sans-serif;
-}
-
-.conteneur-nav{
-  display:flex;
-  flex-direction:row;
-  justify-content: flex-end;
-  gap: 20px;
-   max-width: 1400px;
-   box-sizing: border-box;
-   font-family: "Raleway";
-   margin: 0;
-   padding: 0; 
-   color: black;    
-    
-}
-
-.nav-links{
-  text-decoration: none;
-  left: 1092px;
-  top: 0px;
-  line-height: 20px;
-  width: 140px;
-}
-.nav-links:hover {
-  border-top: 2px solid rgba(0, 101, 252, 1);
-  color: #0065fc;
-  line-height: 30px;
+                   /** HEADER **/
   
-    } 
+ 
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 4rem;
+}
+
+nav {
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 10.1rem;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+nav a:hover {
+  border-top: 2px solid #0065FC;
+  padding-top: 46px;
+  color: #0065FC;
+}
+  
 
 /** BODY **/
+p, h1, h2, h3, h4{
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
 body {
-  height: auto;
-    max-width: 1400px;
-    min-width: 992px;
+  max-width: 87.5rem;
+  margin: 0 auto;
+  height: auto; 
     background-color: white;
-    margin-left: 2em;
-    margin-right: 2em;
+   
 }
 
 .titre-1{
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 700;
     margin-top: 80px;
 }
@@ -61,8 +68,8 @@ body {
   flex-direction: row;
   align-items: center;
   border: 1px solid #F2F2F2;
-  width: 332px;
-  height: 49px;
+  width: 20.75rem;
+  height: 3.063rem;
   border-radius: 20px;
 
 }
@@ -70,8 +77,8 @@ body {
 .fa-location-dot{
   background: #f2f2f2;
   border-radius: 20% 0 0 20%;
-  width: 50px;
-  height: 49px;
+  width: 3.125rem;
+  height: 3.063rem;
   display: flex;
   justify-content: center;
   line-height: 50px;
@@ -108,16 +115,20 @@ font-size: 16px;
   color: white;
  background-color: #0065fc;
  border-radius: 0 20px 20px 0;
- width: 132px;
- height: 49px; 
+ width: 8.25rem;
+ height: 3.063rem; 
 }
 
+.fa-magnifying-glass {
+  display: inline;
+  display: none;
+}
 
 .fa-info{
     background:white;
     border-radius:50%;
-    width:24px;
-    height: 24px;
+    width:1.5rem;
+    height: 1.5rem;
     border:0.8px solid #d9d9d9; 
     display: flex;
     justify-content: center;
@@ -140,27 +151,35 @@ font-size: 16px;
 font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 0px;
 }
 .flex-filtres{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 50px;
-  margin-top: 25px;
-  
+  gap: 15px;
+  margin-top: 35px;
+  }
+.flexfiltres12 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
-.fa-money-bill-wave{
-  font-size: 20px;
+
+.flexfiltres34 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+  .fa-money-bill-wave{
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: white;
-    border-top-left-radius:25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    width:170px;
-    height: 49px;
+  border-radius: 25px;
+    width: 10vw;
+    height: 3.063rem;
     border:2.5px solid #d9d9d9; 
     line-height: 50px;
     color: #0065fc;
@@ -169,19 +188,13 @@ font-family: 'Raleway', sans-serif;
   background-color: #DEEBFF;
 }
 .fa-person{
-  font-size: 20px;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
-    background:white;
-    border-top-left-radius:25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    width:140px;
-    height: 49px;
+  background:white;
+    border-radius: 25px;
+    width: 10vw;
+    height: 3.063rem;
     border:2.5px solid #d9d9d9; 
     line-height: 50px;
     color: #0065fc;
@@ -190,17 +203,13 @@ font-family: 'Raleway', sans-serif;
   background-color: #DEEBFF;
 }
 .fa-heart{
-  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   background:white;
-    border-top-left-radius:25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    width:170px;
-    height: 49px;
+    border-radius: 25px;
+    width: 10vw;
+    height: 3.063rem;
     border:2.5px solid #d9d9d9; 
     line-height: 50px;
     color: #0065fc;
@@ -209,17 +218,13 @@ font-family: 'Raleway', sans-serif;
   background-color: #DEEBFF;
 }
 .fa-dog{
-  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   background:white;
-    border-top-left-radius:25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    width:210px;
-    height: 49px;
+   border-radius: 25px;
+    width: 12vw;
+    height: 3.063rem;
     border: 2.5px solid #d9d9d9; 
     line-height: 50px;
     color: #0065fc;
@@ -240,13 +245,11 @@ font-family: 'Raleway', sans-serif;
 
   
 .imghebergement{
-width: 246px;
-height:124px ;
-left: 0%;
-right: 0%;
-top: 0%;
+width: 15.5rem;
+height: 6.875rem ;
+
 bottom: 37.69%;
-border: 5px solid #FFFFFF;
+border: 3px solid #FFFFFF;
 border-radius: 20px 20px 0px 0px;
 object-fit: cover;
 
@@ -257,8 +260,8 @@ object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-width: 137px;
-height: 135px;
+width: 8.563rem;
+height: 8.438rem;
 border-left: 5px solid #FFFFFF;
 border-top-width: 2px;
 border-bottom-width: 2px;
@@ -278,6 +281,8 @@ object-fit: cover;
     padding-left: 40px;
     
 }
+
+
 
 .hebergement-marseille {
 display: flex;
@@ -299,18 +304,19 @@ gap: 18px;
     background-color: #F2F2F2;
     X: 0px;
     Y: 0px;
-    width: 880px;
-    height: 626px;
+    width: 55rem;
+    height: 38.75rem;
     border-radius:20px;
  }
 
  .background-hebergement2 {
     margin: 0;
     background-color: #F2F2F2;
-    width: 415px;
-    height: 620px;
+    width: 25.938rem;
+    height: 38.75rem;
     border-radius:20px;
- }
+    
+  }
 
  .main-aside-flex{
     display: flex;
@@ -411,8 +417,8 @@ width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width  : 256px;
-    height : 220px;
+    width  : 16rem;
+    height : 12.5rem;
     background : white;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -434,8 +440,8 @@ width: 90%;
     flex-direction: row;
     align-items: center;
     margin-left: 40px;
-    width  : 343px;
-    height : 149px;
+    width  : 21.438rem;
+    height : 9.313rem;
     background : white;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -469,7 +475,7 @@ width: 90%;
 /** ACTIVITE MARSEILLE **/
 
 .flex-activite{
-    min-width: 1339px;
+   
     display: flex;
     flex-direction: row;
 }
@@ -477,16 +483,17 @@ width: 90%;
 .card{
   display: flex;
   flex-direction: column;
-  width: 302px;
-  height: 444.51px;
+  width: 18.875rem;
+
+  height: 27.782rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 20px;
 }
 
 .contain-img{
   margin-bottom: 20px;
-  width: 302px;
-  height: 390px;
+  width: 18.875rem;
+  height: 24.375rem;
   object-fit: cover;
   border-radius: 20px 20px 0 0 ;
 }
@@ -513,8 +520,8 @@ font-weight: 700;
 
 .contain-img2{
   margin-bottom: 20px;
-  width: 302px;
-  height: 390px;
+  width: 18.875rem;
+  height: 24.375rem;
   object-fit: cover;
   border-radius: 20px 20px 0 0 ;
 }
@@ -547,8 +554,8 @@ font-weight: 700;
   flex-direction: row;
   align-items: center;
   gap: 100px;
-  width: 1339px;
-  height: 225px;
+  width: 83.688rem;
+  height: 14.063;
   background-color: #F2F2F2;
 }
 .title-footer{
@@ -570,8 +577,8 @@ font-weight: 700;
 }
 .footerbackground{
 
-  height: 225px;
-  width: 1339px;
+  height: 14.063rem;
+  width: 83.688rem;
   left: 48px;
   top: 0px;
   border-radius: 0px;
@@ -601,9 +608,9 @@ font-weight: 700;
   /** MEDIA QUERIES TAB **/
 
   @media screen and (max-width: 992px) {
-    .logo {width: 50px;
-      height: 14px; 
-    }
+  html, body {
+    padding: 2%;
+  }
     
     .conteneur-nav{
       display:flex;
@@ -611,27 +618,27 @@ font-weight: 700;
       
     }
     .titre-1{
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: bold;
     }
     .p-zones{
-      font-size: 15px;
+      font-size: 0.938rem;
     }
     
     .bouton-rechercher{
-      width: 315px;
-      height: 36px;
+      width: 19.688rem;
+      height: 2.25rem;
       border-radius: 20px;
     }
     .fa-location-dot{
-      width: 43px;
-      height: 38px;
+      width: 2.688rem;
+      height: 2.375rem;
       line-height: 40px;
-      font-size: 12px;
+      font-size: 0.75rem;
     }
     
     .placeholder-rechercher input::placeholder{
-      font-size: 14px;
+      font-size: 0.875rem;
       padding-left: 5px;
       
     }
@@ -640,20 +647,21 @@ font-weight: 700;
     .buttn-search {
      border-radius:  0 14px 14px 0;
       line-height: 37px;
-      font-size: 13px;
+      font-size: 0.813rem;
       font-weight: 600;
-     width: 132px;
+     width: 8.25rem;
      height: 38px; 
     
     }
     .flex-filtres{
       gap: 25px;
     }
-    
-    
+    .nom-filtre{
+      font-size: 14px;
+    }
     .background-hebergement2 {
-      width: 880px;
-      height: 260px;
+      width: 55rem;
+      height: 16.25rem;
       
    }
   
@@ -666,6 +674,7 @@ font-weight: 700;
    .aside-flex {
     display: flex;
     flex-direction: row;
+   
     
    }
 
@@ -674,16 +683,16 @@ font-weight: 700;
    }
  
    .imghebpopulaires{
-    width: 106px;
-    height: 144px;
+    width: 6.625rem;
+    height: 9rem;
     border: 5px solid #FFFFFF;
    
 
    
    }
  .content-box-2 {
-  width: 268px;
-  height: 159px;
+  width: 16.75rem;
+  height: 9.938rem;
   margin-left: 20px;
   
  }
@@ -693,30 +702,288 @@ font-weight: 700;
  }
 
  .card { 
-  width: 190px;
-  height: 320px;
+  width: 11.875rem;
+  min-width: 12rem;
+  height: 20rem;
+
  }
 
  .contain-img {
-  width: 150px;
-  height: 267px;
+  width: 9.375rem;
+  height: 16.688rem;
   
  }
 
  .contain-img2 {
-  width: 150px;
-  height: 267px;
+  width: 9.375rem;
+  height: 16.688rem;
   
  }
 
  .title-activite {
-  font-size: 12px;
+  font-size: 0.75rem;
  }
 
  .flex-footer{
-  width: 880px;
+  width: 55rem;
   gap: 20px;
  }
+
+     }
+
+     @media screen and (max-width: 768px) {
+
+
+html,body {
+  padding: 0;
+}
+
+.alignement-telephone-hebergement {
+  display: flex;
+  align-items: center;
+width: 80%;
+}
+header img {
+  padding-left: 3rem;
+}
+
+
+
+.titre-1{
+  margin-left: 5%;
+  font-size: 2rem;
+  
+}
+.p-zones{
+  font-size: 3rem;
+  margin-left: 5%;
+  margin-bottom: 20px;
+}
+
+.bouton-rechercher{
+  margin-left: 45px;
+  width: 20rem;
+  height: 3.063rem;
+  border-radius: 20px;
+}
+
+
+
+.texterechercher {
+  display: none;
+}
+
+.fa-magnifying-glass {
+  display: inline;
+  font-size: 1.25rem;
+  line-height: 50px;
+  
+}
+
+
+.fa-location-dot{
+height: 49px;
+  line-height: 47px;
+  font-size: 0.938rem;
+}
+
+.placeholder-rechercher input::placeholder{
+  font-size: 0.875rem;
+  padding-left: 5px;
+  
+}
+
+
+.buttn-search {
+ border-radius:  0 14px 14px 0;
+  line-height: 47px;
+  font-size: 0.813rem;
+  font-weight: 600;
+ width: 40rem;
+ height: 3.063rem; 
+
+}
+
+.filtres-titre{
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.flex-filtres {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    
+    
+    }
+  
+.flexfiltres12 {
+  margin: 0 auto;
+}
+
+.flexfiltres34 {
+  margin: 0 auto;
+}
+.title-hebergement {
+  padding-left: 100px;
+}
+
+.nom-filtre {
+  font-size: 0.75rem ;
+}
+.fa-money-bill-wave {
+  width: 45vw;
+  height: 3.125rem;
+}
+.fa-person {
+  width: 45vw;
+  height: 3.125rem;
+}
+.fa-heart {
+  width: 45vw;
+  height: 3.125rem;
+}
+.fa-dog {
+  width: 45vw;
+  height: 3.125rem;
+}
+
+.p-zones{
+  font-size: 0.938rem;
+}
+
+.background-hebergement2 {
+  width: 100%;
+  height: 40.625rem;
+  border-radius: 0;
+}
+.aside-flex {
+  flex-direction: column;
+}
+.content-box-2 {
+  margin: 0 auto;
+  width: 74vw;
+  height: 9.688rem; 
+}
+.imghebpopulaires{
+  width: 8.563rem;
+  height: 9rem;
+ }
+ 
+ 
+.main-aside-flex {
+  
+  flex-direction: column-reverse;
+  align-items: center;
+ 
+}
+.icon-grow {
+  gap: 80px;
+}
+
+.hebergement-marseille  {
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-hebergement {
+  width: 100%;
+  
+  height: 98.75rem;
+  border-radius: 0;
+  background-color: white;
+}
+.content-box {
+  
+  width: 74vw;
+  min-width: 407px;
+  height: 13.438rem;
+}
+
+.imghebergement {
+  
+ width: 73.5vw;
+ min-width: 407px;
+ height: 7.5rem;
+}
+
+
+.flex-activite {
+  flex-direction: column;
+ align-items: center;
+height : 56.25rem;
+  
+}
+.titre-activite {
+  margin-left: 100px;
+}
+
+.card {
+  width: 75%;
+  min-width: 407px;
+  height: 12.438rem;
+}
+
+.contain-img {
+  max-width: 80vw;
+  width: 80%;
+  min-width: 407px;
+  height: 9.063rem;
+  object-fit: cover;
+  object-position: top;
+}
+
+.contain-img2 {
+  width: 80%;
+  height: 9.063rem;
+  object-fit: cover;
+
+}
+
+.title-activite {
+  font-size: 0.938rem;
+  font-weight: bold;
+}
+
+.flex-footer {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  height: 31.25rem;
+  
+}
+
+.footerbackground{
+
+  height: 100%;
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 0;
+  
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
      }
 
