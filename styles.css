@@ -149,7 +149,7 @@ font-size: 16px;
 .filtres-titre{
   font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-top: 0px;
 }
@@ -178,7 +178,7 @@ font-family: 'Raleway', sans-serif;
   justify-content: center;
   background: white;
   border-radius: 25px;
-    width: 10vw;
+    min-width: 12vw;
     height: 3.063rem;
     border:2.5px solid #d9d9d9; 
     line-height: 50px;
@@ -193,7 +193,7 @@ font-family: 'Raleway', sans-serif;
   justify-content: center;
   background:white;
     border-radius: 25px;
-    width: 10vw;
+    min-width: 11vw;
     height: 3.063rem;
     border:2.5px solid #d9d9d9; 
     line-height: 50px;
@@ -208,7 +208,7 @@ font-family: 'Raleway', sans-serif;
   justify-content: center;
   background:white;
     border-radius: 25px;
-    width: 10vw;
+    min-width: 11vw;
     height: 3.063rem;
     border:2.5px solid #d9d9d9; 
     line-height: 50px;
@@ -223,7 +223,7 @@ font-family: 'Raleway', sans-serif;
   justify-content: center;
   background:white;
    border-radius: 25px;
-    width: 12vw;
+    min-width: 14vw;
     height: 3.063rem;
     border: 2.5px solid #d9d9d9; 
     line-height: 50px;
@@ -302,8 +302,6 @@ gap: 18px;
 
  .background-hebergement {
     background-color: #F2F2F2;
-    X: 0px;
-    Y: 0px;
     width: 55rem;
     height: 38.75rem;
     border-radius:20px;
@@ -504,7 +502,7 @@ font-family: 'Raleway', sans-serif;
   text-decoration: none;
   color: black;
   line-height: 18.78px;
-  font-size: 16px;
+  font-size: 1rem;
   padding-top: 10px;
 padding-left: 20px; 
 font-weight: 700;
@@ -555,9 +553,10 @@ font-weight: 700;
   align-items: center;
   gap: 100px;
   width: 83.688rem;
-  height: 14.063;
+  height: 14.063rem;
   background-color: #F2F2F2;
 }
+
 .title-footer{
   font-weight: 700;
   margin-left: 79px;
@@ -653,12 +652,28 @@ font-weight: 700;
      height: 38px; 
     
     }
-    .flex-filtres{
-      gap: 25px;
+   
+    
+    .nom-filtre {
+      font-size: 0.75rem ;
     }
-    .nom-filtre{
-      font-size: 14px;
+    .fa-money-bill-wave {
+      width: 17vw;
+      height: 3.125rem;
     }
+    .fa-person {
+      width: 16vw;
+      height: 3.125rem;
+    }
+    .fa-heart {
+      width: 17vw;
+      height: 3.125rem;
+    }
+    .fa-dog {
+      width: 22vw;
+      height: 3.125rem;
+    }
+    
     .background-hebergement2 {
       width: 55rem;
       height: 16.25rem;
@@ -702,9 +717,8 @@ font-weight: 700;
  }
 
  .card { 
-  width: 11.875rem;
-  min-width: 12rem;
-  height: 20rem;
+  flex : 1 1 0;
+height : 20%
 
  }
 
@@ -737,12 +751,43 @@ font-weight: 700;
 html,body {
   padding: 0;
 }
-
-.alignement-telephone-hebergement {
-  display: flex;
-  align-items: center;
-width: 80%;
+.info-500{
+  margin-left: 2% ;
 }
+header {
+  display: block;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+ header img {
+ margin-left: 35vw;
+ margin-top: 5vh;
+}
+
+nav,
+nav ul,
+nav a {
+    width: 100%;
+}
+
+nav ul > * {
+    flex: 1 1 0;
+}
+
+nav a {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 3.3px solid #F2F2F2;
+}
+
+nav a:hover {
+    border-top: initial;
+    padding-top: 20px;
+    border-color: #0065FC;
+}
+
+
 header img {
   padding-left: 3rem;
 }
@@ -761,7 +806,7 @@ header img {
 }
 
 .bouton-rechercher{
-  margin-left: 45px;
+  margin-left: 20%;
   width: 20rem;
   height: 3.063rem;
   border-radius: 20px;
@@ -813,17 +858,12 @@ height: 49px;
     flex-direction: row;
     align-items: baseline;
     flex-wrap: wrap;
+    margin-left: 2%;
     
     
     }
-  
-.flexfiltres12 {
-  margin: 0 auto;
-}
 
-.flexfiltres34 {
-  margin: 0 auto;
-}
+  
 .title-hebergement {
   padding-left: 100px;
 }
@@ -915,13 +955,18 @@ height : 56.25rem;
   
 }
 .titre-activite {
-  margin-left: 100px;
+  margin-left:  5%;
 }
 
 .card {
   width: 75%;
   min-width: 407px;
   height: 12.438rem;
+}
+
+.icon-grow {
+  gap: 50%;
+  margin-left: 7%;
 }
 
 .contain-img {
