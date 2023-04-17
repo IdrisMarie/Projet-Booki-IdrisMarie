@@ -48,7 +48,7 @@ font-family: 'Raleway', sans-serif;
 }
 body {
   
-  max-width: 87.5rem;
+  max-width: 1330px;
   margin: 0 auto;
   height: auto; 
     background-color: white;
@@ -246,13 +246,13 @@ font-family: 'Raleway', sans-serif;
 
   
 .imghebergement{
-width: 15.5rem;
+width: 99%;
 height: 6.875rem ;
 
 bottom: 37.69%;
-border: 3px solid #FFFFFF;
+border: 2px solid #FFFFFF;
 border-radius: 20px 20px 0px 0px;
-object-fit: cover;
+object-fit :cover;
 
 }
 
@@ -288,11 +288,13 @@ object-fit: cover;
 .hebergement-marseille {
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 justify-content:space-between;
 padding-left: 40px;
 padding-right: 40px;
 padding-bottom: 35px;
-gap: 18px;
+gap: 20px;
+
  }
  .hebergement-marseille2 {
     display: flex;
@@ -303,18 +305,17 @@ gap: 18px;
 
  .background-hebergement {
     background-color: #F2F2F2;
-    width: 55rem;
-    height: 38.75rem;
+    width: 100%;
     border-radius:20px;
+    min-width: 870px;
  }
 
  .background-hebergement2 {
     margin: 0;
     background-color: #F2F2F2;
-    width: 25.938rem;
-    min-width: 400px;
-    height: 38.75rem;
+    width: 100%;
     border-radius:20px;
+    min-width: 400px;
     
   }
 
@@ -339,7 +340,7 @@ gap: 18px;
  }
 
  .nom-hotel{
- 
+ margin-left: 5px;
 margin-top: 3px;
 margin-bottom: 10px;
 width: 90%;
@@ -358,6 +359,7 @@ line-height: 18px;
  }
 
  .p-hebergement{
+  margin-left: 5px;
     margin-top: 0px;
     width: 90%;
     font-size: 14px;
@@ -390,6 +392,7 @@ line-height: 18px;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
+margin-left: 5px;
 
 width: 90%;
  }
@@ -414,10 +417,9 @@ width: 90%;
 }
 
  .content-box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width  : 16rem;
+    
+    width  : 250px;
+    min-width: 187px;
     height : 12.5rem;
     background : white;
     border-radius: 20px;
@@ -512,7 +514,6 @@ font-weight: 700;
 }
 
 .flex-activite{
-  min-width: 1330px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -533,8 +534,6 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 1330px;
-  min-width: 1330px;
   margin-top: 30px;
   background-color: #F2F2F2;
 }
@@ -629,7 +628,6 @@ li {
     
     .bouton-rechercher{
       width: 30%;
-      
       height: 2.25rem;
       border-radius: 20px;
     }
@@ -701,17 +699,15 @@ li {
 
     .background-hebergement2 {
       margin: 0 auto;
-      width: 80%;
-      min-width: 800px;
-      height: 16.25rem;
+      width: 100%;
+      min-width: 742px;
       
    }
    
    .background-hebergement {
     margin: 0 auto;
-    width: 80%;
-    min-width: 800px;
-    height: 580px
+    width: 100%;
+    min-width: 742px;
    }
   
    .main-aside-flex{
@@ -730,15 +726,19 @@ li {
    }
    
 .content-box {
-  width: 16rem;
+  width: 30%;
+  min-width: none;
+  
 }
 
 .hebergement-marseille {
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
   gap: 20px;
 }
   .imghebergement {
-    width: 14.5rem;
+    width: 100%;
   }
  
    .imghebpopulaires{
@@ -749,7 +749,7 @@ li {
  .content-box-2 {
 
   margin: 0 auto;
-  width: 15rem;
+  width: 210px;
   height: 8rem;
 }
 
@@ -772,6 +772,7 @@ li {
 #ancrage2 { 
   width: 100%;
   margin: 0 auto;
+  min-width: 742px;
 }
  .titre-activite {
   margin-top: 50px;
@@ -779,18 +780,18 @@ li {
   
  }
 .flex-activite {
-  min-width: 800px;
+  
   gap: 3%;
   justify-content: center;
 }
  .card { 
 height : 20%;
-min-width: 180px;
+
  }
 
  .contain-img {
   width: 100%;
-  min-width: 8.375rem;
+ 
   height: 13.688rem;
   
  }
@@ -808,10 +809,11 @@ min-width: 180px;
   
  }
 footer {
-  min-width: 800px;
+  
   margin: 0 auto;
   margin-top: 40px;
   width: 100%;
+  
   
 }
  .flex-footer{
@@ -830,7 +832,7 @@ footer {
      @media screen and (max-width: 768px) {
 
       html, body {
-        margin: 0;
+        margin: 0 ;
         max-width: none;
      }
       
@@ -876,7 +878,7 @@ footer {
       
       .titre-1{
         margin-left: 5%;
-        font-size: 3rem;
+        font-size: 2rem;
         width: 100%;
         
       }
@@ -925,30 +927,27 @@ footer {
         line-height: 47px;
         font-size: 0.813rem;
         font-weight: 600;
-       width: 40rem;
+       width: 20rem;
        height: 3.063rem; 
       
       }
       
       .filtres-titre{
         margin-top: 20px;
-        margin-left: 15px;
+      
       }
       .flex-filtres {
           display: flex;
           flex-direction: row;
+          justify-content: center;
           align-items: baseline;
           flex-wrap: wrap; 
           }
      
         
-      .flexfiltres12 {
-        margin: 0 auto;
-      }
+    
       
-      .flexfiltres34 {
-        margin: 0 auto;
-      }
+    
       .title-hebergement {
         padding-left: 100px;
       }
@@ -957,19 +956,19 @@ footer {
         font-size: 0.75rem ;
       }
       .fa-money-bill-wave {
-        width: 22rem;
+        width: 150px;
         height: 3.125rem;
       }
       .fa-person {
-        width: 22rem;
+        width: 150px;
         height: 3.125rem;
       }
       .fa-heart {
-        width: 22rem;
+        width: 150px;
         height: 3.125rem;
       }
       .fa-dog {
-        width: 22rem;
+        width: 150px;
         height: 3.125rem;
       }
       
@@ -979,17 +978,19 @@ footer {
       
       .background-hebergement2 {
         
-        
+        width: 100%;
+        min-width: 250px;
         height: 40.625rem;
         border-radius: 0;
       }
       .aside-flex {
         flex-direction: column;
+        margin-top: 0;
       }
       .content-box-2 {
         margin: 0 auto;
         width: 70vw;
-        min-width: 430px;
+        
         max-width: 450px;
         height: 9.688rem; 
       }
@@ -1014,11 +1015,12 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
+        padding: 0;
       }
       
       .background-hebergement {
         width: 100%;
-        
+        min-width: 300px;
         height: 98.75rem;
         border-radius: 0;
         background-color: white;
@@ -1026,16 +1028,14 @@ footer {
       .content-box {
         
         width: 75vw;
-        min-width: 420px;
+        
         max-width: 430px;
         height: 13.438rem;
       }
       
       .imghebergement {
         
-       width: 100%;
-       min-width: 407px;
-       height: 7.5rem;
+        height: 7.5rem;
       }
       
       
@@ -1048,10 +1048,12 @@ footer {
       .titre-activite {
         margin-left: 100px;
       }
-      
+      #ancrage2 {
+        min-width: 300px;
+      }
       .card {
-        width: 25vw;
-        min-width: 407px;
+        width: 70vw;
+        
         height: 12.438rem;
       }
       
@@ -1080,10 +1082,9 @@ footer {
         align-items: flex-start;
         gap: 30px;
         height: 31.25rem;
-        
+        min-width: 300px;
       }
-      .footer {
-        width: 100%;
+      
       }
       .footerbackground{
       
