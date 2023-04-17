@@ -789,13 +789,14 @@ min-width: 180px;
  }
 
  .contain-img {
+  width: 100%;
   min-width: 8.375rem;
   height: 13.688rem;
   
  }
 
  .contain-img2 {
-  width: 9.375rem;
+  width: 100%;
   height: 13.688rem;
   
  }
@@ -987,7 +988,9 @@ footer {
       }
       .content-box-2 {
         margin: 0 auto;
-        width: 35rem;
+        width: 70vw;
+        min-width: 430px;
+        max-width: 450px;
         height: 9.688rem; 
       }
       .imghebpopulaires{
@@ -1022,14 +1025,15 @@ footer {
       }
       .content-box {
         
-        width: 35.5rem;
-        min-width: 407px;
+        width: 75vw;
+        min-width: 420px;
+        max-width: 430px;
         height: 13.438rem;
       }
       
       .imghebergement {
         
-       width: 35rem;
+       width: 100%;
        min-width: 407px;
        height: 7.5rem;
       }
@@ -1046,20 +1050,20 @@ footer {
       }
       
       .card {
-        width: 35rem;
+        width: 25vw;
         min-width: 407px;
         height: 12.438rem;
       }
       
       .contain-img {
-        width: 80%;
+        width: 100%;
         height: 9.063rem;
         object-fit: cover;
         object-position: center;
       }
       
       .contain-img2 {
-        width: 80%;
+        width: 100%;
         height: 9.063rem;
         object-fit: cover;
       
