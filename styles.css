@@ -727,7 +727,6 @@ li {
    
 .content-box {
   width: 30%;
-  min-width: none;
   
 }
 
@@ -1096,4 +1095,4 @@ footer {
         
         }
 
-     }      
+     
